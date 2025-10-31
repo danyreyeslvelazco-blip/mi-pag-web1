@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Reyes - Estudiante de Ciencias de la Computación</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Paleta de colores */
+        :root {
+            --color-negro: #1a1a1a;
+            --color-gris-oscuro: #333;
+            --color-gris-medio: #666;
+            --color-gris-claro: #999;
+            --color-blanco: #fff;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: var(--color-negro);
+            color: var(--color-blanco);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-blanco);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--color-gris-claro);
+        }
+        
+        /* Secciones */
+        section {
+            padding: 3rem 0;
+            background-color: var(--color-blanco);
+            margin-bottom: 2px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-negro);
+            border-bottom: 2px solid var(--color-gris-claro);
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Sobre mí */
+        .about {
+            background-color: var(--color-blanco);
+        }
+        
+        /* Educación */
+        .education {
+            background-color: #f9f9f9;
+        }
+        
+        .university {
+            font-weight: bold;
+            color: var(--color-gris-oscuro);
+        }
+        
+        /* Cursos */
+        .courses {
+            background-color: var(--color-blanco);
+        }
+        
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .course-item {
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-left: 4px solid var(--color-gris-oscuro);
+        }
+        
+        /* Enlaces */
+        .links {
+            background-color: #f9f9f9;
+        }
+        
+        .link-list {
+            list-style-type: none;
+        }
+        
+        .link-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: var(--color-blanco);
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .link-item a {
+            color: var(--color-gris-oscuro);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .link-item a:hover {
+            color: var(--color-negro);
+            text-decoration: underline;
+        }
+        
+        /* Contacto */
+        .contact {
+            background-color: var(--color-blanco);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        
+        .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: var(--color-gris-oscuro);
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: var(--color-negro);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <!-- Imagen de perfil (placeholder) -->
+            
+            <img src="https://uploads.onecompiler.io/442r6vqng/4438expjw/WhatsApp%20Image%202025-10-30%20at%208.55.27%20PM.jpeg" alt="Foto de perfil"> <style="width:150px; height:150px; border-radius:50%; background-color:#666; margin:0 auto 1rem; display:flex; align-items:center; justify-content:center; color:white; font-size:14px; border:4px solid white;">
+          
+              
+            </div>
+            <h1>Daniela Alessandra Reyes Luján Velazco</h1>
+            <p class="subtitle">Estudiante de Ciencias de la Computación</p>
+            <p class="subtitle">Universidad Católica San Pablo</p>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p>Soy un estudiante de Ciencias de la Computación en la Universidad Católica San Pablo en mi segundo año. Siempre me ha apasionado el Desarrollo de Software & Ingeniería como también la Seguridad informática y ciberseguridad.</p>
+            <p>Considero que una de mis fortalezas es mi capacidad de aprendizaje rápido. Por ejemplo, para un proyecto universitario tuvimos que hacer nuestra propia página web, de forma autodidacta.</p>
+            <p>Siempre me interesó la tecnología. Elegí Ciencias de la Computación porque me permite combinar la resolución lógica de problemas con la creatividad.</p>
+        </div>
+    </section>
+
+    <!-- Sección Educación -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Educación</h2>
+            <p><span class="university">Universidad Católica San Pablo</span></p>
+            <p>Ciencias de la Computación</p>
+            <p>Segundo año</p>
+        </div>
+    </section>
+
+    <!-- Sección Cursos -->
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-title">Cursos</h2>
+            <div class="course-list">
+                <div class="course-item">Introducción a la vida universitaria</div>
+                <div class="course-item">Metodología del Estudio</div>
+                <div class="course-item">Comunicación</div>
+                <div class="course-item">Programación de Videojuegos</div>
+                <div class="course-item">Matemática I</div>
+                <div class="course-item">Estructuras Discretas I</div>
+                <div class="course-item">Estructuras Discretas II</div>
+                <div class="course-item">Introducción de Ciencias de la Computación</div>
+                <div class="course-item">Introducción a la Filosofía</div>
+                <div class="course-item">Apreciación Musical</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Enlaces -->
+    <section class="links">
+        <div class="container">
+            <h2 class="section-title">Enlaces</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <strong>Mi LinkedIn:</strong> 
+                    <a href="https://www.linkedin.com/in/daniela-alessandra-reyes-lujan-velazco-009247345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        Daniela Alessandra Reyes Luján Velazco
+                    </a>
+                </li>
+                <li class="link-item">
+                    <strong>Profesores:</strong>
+                    <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros</a> | 
+                    <a href="https://www.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638/" target="_blank">Rosmery Quispe</a>
+                </li>
+                <li class="link-item">
+                    <strong>Compañeros UCSP:</strong>
+                    <a href="https://derekloayza.github.io/" target="_blank">Derek Loayza</a> | 
+                    <a href="https://nickolasjackmatiuabarcabedregal.github.io/" target="_blank">Nickolas Bedregal</a> | 
+                    <a href="https://eydham-segoviacabrera.github.io/portafolio" target="_blank">Eydham Segovia</a> | 
+                    <a href="https://leonarlh24-commits.github.io/" target="_blank">Leonardo Huamán</a> |
+                    <a href="https://guspinkman.github.io/Gustavo-Adolfo-Alpaca-Ticona/" target="_blank">Gustavo Alpaca</a> | 
+                    <a href="https://danvizcarra.github.io/franciscovizcarra.github.io/" target="_blank">Francisco Vizcarra</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Información de Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email Institucional</h3>
+                    <p>daniela.reyeslujan@ucsp.edu.pe</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email Personal</h3>
+                    <p>dany.rlvelazco@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Ubicación</h3>
+                    <p>Arequipa, Perú</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Daniela Alessandra Reyes Luján Velazco</p>
+        </div>
+    </footer>
+</body>
+</html>
