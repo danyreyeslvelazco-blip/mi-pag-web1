@@ -1,0 +1,174 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Paleta de colores */
+:root {
+    --color-negro: #1a1a1a;
+    --color-gris-oscuro: #333;
+    --color-gris-medio: #666;
+    --color-gris-claro: #999;
+    --color-blanco: #fff;
+}
+
+/* Encabezado */
+header {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--color-gris-claro);
+}
+
+/* Secciones */
+section {
+    padding: 3rem 0;
+    background-color: var(--color-blanco);
+    margin-bottom: 2px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-negro);
+    border-bottom: 2px solid var(--color-gris-claro);
+    padding-bottom: 0.5rem;
+}
+
+/* Sobre mí */
+.about {
+    background-color: var(--color-blanco);
+}
+
+/* Educación */
+.education {
+    background-color: #f9f9f9;
+}
+
+.university {
+    font-weight: bold;
+    color: var(--color-gris-oscuro);
+}
+
+/* Cursos */
+.courses {
+    background-color: var(--color-blanco);
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.course-item {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-left: 4px solid var(--color-gris-oscuro);
+}
+
+/* Enlaces */
+.links {
+    background-color: #f9f9f9;
+}
+
+.link-list {
+    list-style-type: none;
+}
+
+.link-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--color-blanco);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.link-item a {
+    color: var(--color-gris-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.link-item a:hover {
+    color: var(--color-negro);
+    text-decoration: underline;
+}
+
+/* Contacto */
+.contact {
+    background-color: var(--color-blanco);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.contact-item h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-gris-oscuro);
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+}
